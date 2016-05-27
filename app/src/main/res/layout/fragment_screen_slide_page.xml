@@ -1,14 +1,25 @@
-<!-- fragment_screen_slide_page.xml -->
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/content"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
 
     <TextView
-        android:padding="16dp"
+        android:id="@+id/text1"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
         android:lineSpacingMultiplier="1.2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#ffffff"
-        android:text="test test test test test test test test test test test test \ntest test test test test test test test test test test test \ntest test test test test test test test test test test test \ntest test test test test test test test test test test test \ntest test test test test test test test test test test test \ntest test test test test test test test test test test test \ntest test test test test test test test test test test test \n" />
-</ScrollView>
+        android:text="@string/lorem_ipsum" />
+
+
+
+</RelativeLayout>
